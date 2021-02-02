@@ -13,6 +13,8 @@ body {
 body {
   display: flex;
   flex-direction: column;
+  background-color: $color-black;
+  color: $color-white;
 }
 
 .wrap {
@@ -27,7 +29,7 @@ body {
 }
 
 a {
-  color: rgb(182, 38, 44);
+  color: $color-accent;
   text-decoration: none;
   -webkit-transition: color 0.5s;
   transition: color 0.5s;
@@ -40,11 +42,11 @@ a {
 }
 
 ::selection {
-  background-color: rgb(182, 38, 44);
-  color: white;
+  background-color: $color-accent;
+  color: $color-white;
 }
 
 ::-moz-selection {
-  background-color: rgb(182, 38, 44);
-  color: white;
+  background-color: $color-accent;
+  color: $color-white;
 }
