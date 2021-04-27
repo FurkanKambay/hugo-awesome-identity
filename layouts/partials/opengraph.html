@@ -1,10 +1,10 @@
 <meta property="og:title" content="{{ .Title }}" />
-{{ with .Site.Params.meta.description -}}
+{{ with .Site.Params.opengraph.description -}}
 <meta property="og:description" content="{{ . }}" />
 {{- end }}
 <meta property="og:type" content="website" />
 <meta property="og:url" content="{{ .Permalink }}" />
-{{ with .Site.Params.meta.images }}
+{{ with .Site.Params.opengraph.images }}
   {{- range first 6 . -}}
 <meta property="og:image" content="{{ . | absURL }}" />
   {{- end -}}
