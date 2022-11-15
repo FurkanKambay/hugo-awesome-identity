@@ -53,6 +53,10 @@
   <a class="contact" href="https://hackerrank.com/{{ $id }}">
     <i class="fab fa-hackerrank" aria-hidden="true"></i>
   </a>
+    {{- else if (eq $service "bitbucket") }}
+  <a class="contact" href="https://bitbucket.org/{{ $id }}">
+    <i class="fab fa-bitbucket" aria-hidden="true"></i>
+  </a>
     {{- else if (eq $service "hackthebox") }}
   <a class="contact" href="https://app.hackthebox.eu/profile/{{ $id }}">
     <img src="https://www.hackthebox.eu/images/favicon.png" width="16" />

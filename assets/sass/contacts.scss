@@ -21,5 +21,6 @@
     background: $color-accent;
     color: $color-white;
     box-shadow: 0 0 1px 7px fade-out($color-accent, 0.85);
+    position: relative;
   }
 }
